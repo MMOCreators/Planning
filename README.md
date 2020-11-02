@@ -9,9 +9,12 @@
 * What is the name/domain name of the Game? **To be Completed**
     * Set Deadlines **To be Completed**
 ##### Week 2 Micro-services
-* Login System **To be Completed**
+* Front-end **To be Completed**
+* Login System [Document](micro_services/login-system.md)
 * User System **To be Completed**
-* Master Server **To be Completed**
+* Server Server **To be Completed**
+* User Server **To be Completed**
+* Instance Server **To be Completed**
 ##### Week 3 Game Server
 * Game Session Plugin **To be Completed**
 * Master Server Plugin **To be Completed**
