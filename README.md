@@ -9,7 +9,7 @@
 * What is the name/domain name of the Game? **To be Completed**
     * Set Deadlines **To be Completed**
 ##### Week 2 Micro-services
-* Front-end **To be Completed**
+* Front-end [Document](micro_services/front-end.md)
 * Login System [Document](micro_services/login-system.md)
 * User System **To be Completed**
 * Server Server **To be Completed**
