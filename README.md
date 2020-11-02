@@ -3,9 +3,9 @@
 ##### Week 1 Planning
 * How many Micro-services do we need? [Document](micro-services.md)
     * In which order they should come **To be Completed**
-* Design Database **To be Completed**
+* Design Database [Document](database-design.md)
 * How should the Networking Architecture be **To be Completed**
-* What 3rd Party Services should be used **To be Completed**
+* What 3rd Party Services should be used? [Document](3rd-party-services.md)
 * What is the name/domain name of the Game? **To be Completed**
     * Set Deadlines **To be Completed**
 ##### Week 2 Micro-services
