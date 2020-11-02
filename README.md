@@ -1,5 +1,10 @@
 # Planning
 
+## Information
+* [Development Calendar](https://calendar.google.com/calendar/u/0?cid=NG92cmxwa3MzZWxjNGYxZnZqNzE3ajdwOW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
+* [Discord Server](https://discord.gg/8S7G8j33Ag)
+* [Project Board](https://github.com/orgs/MMOCreators/projects/1)
+
 ##### Week 1 Planning
 * How many Micro-services do we need? [Document](micro-services.md)
     * In which order they should come **To be Completed**
@@ -30,5 +35,3 @@
 
 ### Editing
 Edit using [Stackedit.io](https://stackedit.io/app#)
-
-Still have alot todo.
