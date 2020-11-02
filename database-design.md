@@ -1,5 +1,8 @@
 ## Database Design
 The simplier you make it, the easier it is overall. Limit the number of features, for v1.0 rather then trying to build everything.
+## Information
+* Database: Postgres
+
 ### Users
 * id
 * username
