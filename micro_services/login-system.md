@@ -1,5 +1,8 @@
 ### Login System
 #### Reason
+By Placing in all the Functionality required for a user to login/register, reset password, use forget username. We can seperate the complexity from the main User System, allowing the for only user login/validation to happen while all of the actual user functionality sites within the User System, makes it alot easier to handle overall.
+
+Though if I was using Elixir, I would shuve it all into 1 App cause.. Yeah. Elixir Rocks.
 #### Endpoints
 * /api/login [POST]
 	* Reason:
@@ -7,60 +10,49 @@
 	* Payload:
 		* username [string] **REQUIRED**
 		* password [string] **REQUIRED**
-		* client_id [string] **REQUIRED**
+		* build_id [string] **REQUIRED**
 * /api/login/validate [POST]
-	* Reason:
+	* Reason: Uses the MFA TOTP to Login
 	* Security: rate-limit-by-ip, payload validation, payload sanitization
 	* Payload:
 		* code [string] **REQUIRED**
-		* client_id [string] **REQUIRED**
+		* build_id [string] **REQUIRED**
 * /api/register [POST]
-	* Reason:
+	* Reason: Allows a user to register with the System.
 	* Security: rate-limit-by-ip, payload validation, payload sanitization
 	* Payload:
 		* username [string] **REQUIRED**
 		* password [string] **REQUIRED**
 		* email [string] **REQUIRED**
-		* client_id [string] **REQUIRED**
+		* build_id [string] **REQUIRED**
 * /api/register/verify [POST]
-	* Reason:
+	* Reason: Verify that the Email you used, is a valid Email.
 	* Security: rate-limit-by-ip, payload validation, payload sanitization
 	* Payload:
 		* token [string] **REQUIRED**
-		* client_id [string] **REQUIRED**
-* /api/profile [GET]
-	* Reason:
-	* Security: rate-limit-by-ip, payload validation, payload sanitization, jwt-auth-header
-	* Headers:
-		* Authorization [string] **REQUIRED**
-	* Payload: NONE
-* /api/profile [POST]
-	* Reason:
-	* Security: rate-limit-by-ip, payload validation, payload sanitization, jwt-auth-header
-	* Headers:
-		* Authorization [string] **REQUIRED**
-		* client_id [string] **REQUIRED**
+		* build_id [string] **REQUIRED**
+* /api/password/verify [POST]
+	* Reason: Validate the changing of your Password.
+	* Security: rate-limit-by-ip, payload validation, payload sanitization
 	* Payload:
-		* display_name [string] **REQUIRED**
-* /api/profile/password [POST]
-	* Reason:
-	* Security: rate-limit-by-ip, payload validation, payload sanitization, jwt-auth-header
-	* Headers:
-		* Authorization [string] **REQUIRED**
-		* client_id [string] **REQUIRED**
-	* Payload:
-		* old_password [string] **REQUIRED**
-		* new_password [string] **REQUIRED**
+		* token [string] **REQUIRED**
+		* build_id [string] **REQUIRED**
 * /api/resetpassword [POST]
-	* Reason:
+	* Reason: Triggering the Resetting of the User's Password
 	* Security: rate-limit-by-ip, payload validation, payload sanitization
 	* Payload:
 		* username [string] **REQUIRED**
 		* email [string] **REQUIRED**
-		* client_id [string] **REQUIRED**
+		* build_id [string] **REQUIRED**
+* /api/resetpassword/verify [POST]
+	* Reason: Verify the User did in-deed want to Reset their Password.
+	* Security: rate-limit-by-ip, payload validation, payload sanitization
+	* Payload:
+		* token [string] **REQUIRED**
+		* build_id [string] **REQUIRED**
 * /api/forgotusername [POST]
-	* Reason:
+	* Reason: User wants to know their forgotten username.
 	* Security: rate-limit-by-ip, payload validation, payload sanitization
 	* Payload:
 		* email [string] **REQUIRED**
-		* client_id [string] **REQUIRED**
+		* build_id [string] **REQUIRED**

@@ -11,9 +11,9 @@
 ##### Week 2 Micro-services
 * Front-end [Document](micro_services/front-end.md)
 * Login System [Document](micro_services/login-system.md)
-* User System **To be Completed**
+* User System [Document](micro_services/user-system.md)
 * Server Server **To be Completed**
-* User Server **To be Completed**
+* Email Server [Document](micro_services/email-system.md)
 * Instance Server **To be Completed**
 ##### Week 3 Game Server
 * Game Session Plugin **To be Completed**
