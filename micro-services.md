@@ -7,3 +7,5 @@ Why are we asking this Question? Your prolly wondering, but at this stage your g
 ### Server System [Document](/micro_services/server-system.md)
 ### Email System [Document](/micro_services/email-system.md)
 ### Instance System [Document](/micro_services/instance-system.md)
+
+![Image of Yaktocat](https://github.com/MMOCreators/Planning/blob/develop/files/v2-micro-service-diagram.png)
