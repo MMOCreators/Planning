@@ -3,6 +3,8 @@ The simplier you make it, the easier it is overall. Limit the number of features
 ## Information
 * Database: Postgres
 
+![v1 Database Layout Diagram](https://github.com/MMOCreators/Planning/blob/develop/files/v1-database-layout.png)
+
 ### Users
 * id
 * username
@@ -46,6 +48,7 @@ The simplier you make it, the easier it is overall. Limit the number of features
 * id
 * name
 * disabled
+* last_restart_on
 * shutdown_on
 * created_on
 ### Servers
@@ -82,20 +85,26 @@ The simplier you make it, the easier it is overall. Limit the number of features
 * added_on
 * removed_on
 * created_on
+### Character_Location
+* id
+* character_id
+* server_id
+* created_on
 ### Items
 * id
 * name
 * description
+* data
 * hash
 * created_on
 ### Clients
 * id
+* uid
 * name
-* disabled?
 * disabled_on
 * created_on
 ### Builds
 * id
+* uid
 * client_id
-* token
 * created_on

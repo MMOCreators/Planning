@@ -35,3 +35,11 @@
 
 ### Editing
 Edit using [Stackedit.io](https://stackedit.io/app#)
+
+## Diagrams
+
+### Database
+![v1 Database Layout Diagram](https://github.com/MMOCreators/Planning/blob/develop/files/v1-database-layout.png)
+
+### Micro Services
+![v2 Micro Service Diagram](https://github.com/MMOCreators/Planning/blob/develop/files/v2-micro-service-diagram.png)
